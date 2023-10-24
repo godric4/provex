@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,200;0,400;0,600;1,300;1,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  /* body {
+    background-color: ;
+    color: #dcca87;
+  } */
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: 'Montserrat';
+    /* font-weight: 700; */
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+  svg {
+    pointer-events: none;
+  }
+}
+
+.user-img {
+  border-radius: 50%;
+  height: 100px;
+}
+
+@layer components {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn {
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid #023047;
+  }
+
+  .sidebar {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transition: var(--transition);
+  }
+
+  .sidebar ul {
+    right: -1.4rem;
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .container {
+      width: 992px;
+    }
+    .sidebar {
+      display: none;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .container {
+      width: 1200px;
+    }
+  }
+
+  a:hover {
+    color: inherit;
+  }
+}
