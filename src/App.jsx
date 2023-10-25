@@ -1,6 +1,15 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { ErrorPage, Home, Register } from './pages';
-import { Footer, Navbar, Profile, Username } from './components';
+import {
+  About,
+  ErrorPage,
+  Home,
+  PricePlan,
+  PropertiesPage,
+  Register,
+  Services,
+  Contact,
+} from './pages';
+import { Footer, Navbar, Profile } from './components';
 
 const App = () => {
   return (
@@ -9,9 +18,12 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/' element={<Register />} />
-
-          <Route path='/user' element={<Username />} />
+          <Route path='/register' element={<Register />} />
+          <Route path='/properties' element={<PropertiesPage />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/pricing' element={<PricePlan />} />
           <Route path='/' element={<Profile />} />
           <Route path='*' element={<ErrorPage />} />
         </Routes>

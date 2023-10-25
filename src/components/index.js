@@ -11,6 +11,9 @@ import Profile from './Profile';
 import Pricing from './Pricing';
 import Properties from './Properties';
 import PropertyCard from './PropertyCard';
+import MiniHero from './MiniHero';
+import ContactForm from './ContactForm';
+import SocialIcons from './SocialIcons';
 
 export {
   Navbar,
@@ -24,4 +27,7 @@ export {
   Pricing,
   Properties,
   PropertyCard,
+  MiniHero,
+  ContactForm,
+  SocialIcons,
 };

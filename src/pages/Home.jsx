@@ -22,7 +22,7 @@ const Home = () => {
           backgroundRepeat: 'no-repeat',
         }}
       >
-        <div className='absolut text-center h-full flex justify-center item-center flex-col  bg-[rgba(0,0,3,.6)] text-white p-3'>
+        <div className=' text-center h-full flex justify-center item-center flex-col  bg-[rgba(0,0,3,.6)] text-white p-3'>
           <h1 className='font-bold text-[3rem]'>Provex Homes</h1>
           <p className='text-[1.1rem]'>
             ProVex Homes LTD is the easiest way to access smarter investment

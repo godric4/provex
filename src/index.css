@@ -86,4 +86,66 @@
   a:hover {
     color: inherit;
   }
+  /* form */
+  .contact-form {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .contact-form input:focus {
+    border-radius: 10px;
+  }
+
+  .form-label {
+    color: var(--dark);
+    font-weight: bold;
+  }
+
+  .contact-form input,
+  textarea {
+    border: 1px solid var(--dark);
+  }
+
+  @media screen and (min-width: 768px) {
+    .contact-form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    form {
+      width: 600px;
+    }
+  }
+
+  .contact {
+    display: flex;
+    place-items: center;
+  }
+
+  .contact-page {
+    margin-top: -1rem;
+    min-height: 100vh;
+    padding-top: 5rem;
+  }
+
+  .about-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .about-images img {
+    height: 155px;
+    width: 100%;
+    margin: 0 0.1rem;
+  }
+
+  @media only screen and (max-width: 448px) {
+    .about-images img {
+      height: 100px;
+      width: 110px;
+      margin: 0;
+    }
+  }
 }

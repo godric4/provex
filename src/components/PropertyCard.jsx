@@ -5,7 +5,7 @@ const PropertyCard = ({ size, price, name, imgUrl }) => {
         <img src={imgUrl} alt='' className='h-full w-full' />
       </div>
       <div className='text-center pb-3 pt-3'>
-        <p className='font-bold text-[1rem] uppercase'>{name} </p>
+        <p className='font-bold text-[.9rem] uppercase'>{name} </p>
         <p>{price}</p>
         <p>{size}</p>
       </div>
