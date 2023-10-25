@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { links } from '../utils/constants';
 
 const Sidebar = () => {
@@ -62,6 +62,10 @@ const Sidebar = () => {
                   </li>
                 );
               })}
+
+              <NavLink className='text-accent text-[1.2rem]'>
+                <p className='ml-6 mt-3'>Sign In | Register</p>
+              </NavLink>
             </ul>
           </>
         )}

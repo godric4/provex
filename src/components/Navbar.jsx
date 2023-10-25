@@ -49,7 +49,7 @@ const Navbar = () => {
               </NavLink>
             );
           })}
-          <NavLink className='text-grey'>
+          <NavLink className='text-accent'>
             <p>Sign In | Register</p>
           </NavLink>
         </ul>
