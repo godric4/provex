@@ -18,7 +18,7 @@ const About = () => {
         </p>
         <p className='mt-2'>
           Our company has achieved a number of great accomplishments, managing
-          to rapidly astablish itself in a competitive market and our proudest
+          to rapidly establish itself in a competitive market and our proudest
           achievement is the steps we have made to generate original ideas to
           facilitate and improve our company and our industry without losing
           sight of the most important element, our clients are promising and

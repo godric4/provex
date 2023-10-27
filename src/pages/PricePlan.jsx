@@ -3,12 +3,12 @@ import { MiniHero, Pricing } from '../components';
 const PricePlan = () => {
   return (
     <div>
-      <MiniHero title='Our Investment Integrattion' />
+      <MiniHero title='Our Investment Integration' />
       <div className='container'>
         <p className='mb-3'>
-          We make it possible for anyone to invest in our investment
-          intergration and get returns. Invest in time tested, professionally
-          managed investment products all in one .
+          We make it possible for anyone to invest in our investment integration
+          and get returns. Invest in time tested, professionally managed
+          investment products all in one .
         </p>
         <p>Invest as you go</p>
         <p className='mt-2'>

@@ -10,6 +10,12 @@ const FaqPage = () => {
         'To begin the home-buying process, you can start by browsing our available listings on our website or contacting one of our agents directly. They will guide you through the steps from there.',
     },
     {
+      question:
+        "Why should i invest in the company's investment product packages?",
+      answer:
+        "The motive of investors investing directly in the company's products package is to generate more income, safety and capital gains from the company",
+    },
+    {
       question: 'What should I consider when buying a property?',
       answer:
         'Consider factors such as location, budget, amenities, and potential for appreciation before making a decision.',
@@ -27,7 +33,7 @@ const FaqPage = () => {
     {
       question: 'How long does the typical home-buying process take?',
       answer:
-        'Answer: The timeline can vary, but on average, it takes about 30-45 days from making an offer to closing the deal. Factors like financing, inspections, and negotiations can influence the duration.',
+        'The timeline can vary, but on average, it takes about 30-45 days from making an offer to closing the deal. Factors like financing, inspections, and negotiations can influence the duration.',
     },
   ];
 

@@ -45,10 +45,10 @@ const Contact = () => {
                 <p>
                   {' '}
                   <a
-                    href="https://wa.me/447456322605?text=Hello  %20Provex Homes%20I have ,%20i%20got%20something%20important%20to%20discuss'"
+                    href="https://wa.me/33745692161?text=Hello  %20Provex Homes%20I have ,%20i%20got%20something%20important%20to%20discuss'"
                     className='text-accent font-bold'
                   >
-                    +447456322605
+                    +33745692161
                   </a>
                 </p>
               </div>

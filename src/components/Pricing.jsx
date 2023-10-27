@@ -24,7 +24,7 @@ const Pricing = () => {
                   </p>
                   <button className=' bg-secondary w-full p-4  text-primary '>
                     <Link
-                      to='pricing'
+                      to='/properties'
                       className='bg-primary text-white py-2 px-6 btn '
                     >
                       {' '}
