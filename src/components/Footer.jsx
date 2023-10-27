@@ -5,13 +5,21 @@ const Footer = () => {
     // <footer classNameNameName='mt-[4rem] bg-primary p-4 text-center
     // </footer>
     <footer className=' text-white py-8 mt-[4rem] bg-primary p-4 text-center'>
-      <div className='container mx-auto flex flex-wrap justify-between'>
+      <div className='container mx-auto flex foot flex-wrap justify-between'>
         {/* <!-- Contact Details --> */}
         <div className='w-full md:w-1/3 mb-4 md:mb-0'>
           <h3 className='text-xl font-bold mb-4'>Contact Details</h3>
           <p>263 NOTTINGHAM ROAD</p>
           <p>NOTTINGHAM, ENGLAND NG7 7DA</p>
-          <p>Phone: +447456322605</p>
+          <p>
+            {' '}
+            <a
+              href="https://wa.me/447456322605?text=Hello  %20Provex Homes%20I have ,%20i%20got%20something%20important%20to%20discuss'"
+              className='text-accent font-bold'
+            >
+              +447456322605
+            </a>
+          </p>
           <p>Email: info@provexhomes.com</p>
           <p>Email: support@provexhomes.com</p>
         </div>
@@ -30,9 +38,11 @@ const Footer = () => {
                 Properties
               </Link>
             </li>
-            <Link to='/pricing' className='block mb-2'>
-              Pricing
-            </Link>
+            <li>
+              <Link to='/pricing' className='block mb-2'>
+                Pricing
+              </Link>
+            </li>
             <li>
               <Link to='/services' className='block mb-2'>
                 Services

@@ -30,7 +30,7 @@ const Navbar = () => {
 
   return (
     <header
-      className={`z-20  w-full h-[4.5rem] fixed py-2 bg-primary ${
+      className={`z-20  w-full h-[4.5rem] hover fixed py-2 bg-primary ${
         scrolling ? 'bg-primary text-lighter' : ''
       }`}
     >

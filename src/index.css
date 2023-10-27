@@ -127,4 +127,16 @@
     min-height: 100vh;
     padding-top: 5rem;
   }
+
+  .hover a:hover {
+    color: white;
+    transition: all ease-in-out 3ms;
+    text-decoration: underline;
+  }
+
+  footer a:hover {
+    color: rgb(11, 223, 205);
+    transition: all ease-in-out 3ms;
+    text-decoration: underline;
+  }
 }
