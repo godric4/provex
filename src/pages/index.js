@@ -6,6 +6,9 @@ import ErrorPage from './ErrorPage';
 import Register from './Register';
 import PricePlan from './PricePlan';
 import PropertiesPage from './PropertiesPage';
+import Faq from './Faq';
+import Privacy from './Privacy';
+import Terms from './Terms';
 
 export {
   Home,
@@ -16,4 +19,5 @@ export {
   Register,
   PricePlan,
   PropertiesPage,
+  Faq,
 };

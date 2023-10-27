@@ -49,8 +49,8 @@ const Navbar = () => {
               </NavLink>
             );
           })}
-          <NavLink className='text-accent'>
-            <p>Sign In | Register</p>
+          <NavLink to='/register' className='text-accent'>
+            <p>Sign In </p>
           </NavLink>
         </ul>
 

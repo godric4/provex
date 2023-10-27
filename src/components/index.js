@@ -14,6 +14,7 @@ import PropertyCard from './PropertyCard';
 import MiniHero from './MiniHero';
 import ContactForm from './ContactForm';
 import SocialIcons from './SocialIcons';
+import Question from './Question';
 
 export {
   Navbar,
@@ -30,4 +31,5 @@ export {
   MiniHero,
   ContactForm,
   SocialIcons,
+  Question,
 };

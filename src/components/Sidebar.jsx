@@ -63,9 +63,9 @@ const Sidebar = () => {
                 );
               })}
 
-              <NavLink className='text-accent text-[1.2rem]'>
-                <p className='ml-6 mt-3'>Sign In | Register</p>
-              </NavLink>
+              <Link to='/register' className='text-accent text-[1.2rem]'>
+                <p className='ml-6 mt-3'>Sign In</p>
+              </Link>
             </ul>
           </>
         )}

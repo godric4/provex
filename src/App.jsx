@@ -8,8 +8,11 @@ import {
   Register,
   Services,
   Contact,
+  Faq,
 } from './pages';
 import { Footer, Navbar, Profile } from './components';
+import Terms from './pages/Terms';
+import Privacy from './pages/Privacy';
 
 const App = () => {
   return (
@@ -25,6 +28,9 @@ const App = () => {
           <Route path='/services' element={<Services />} />
           <Route path='/pricing' element={<PricePlan />} />
           <Route path='/' element={<Profile />} />
+          <Route path='/faq' element={<Faq />} />
+          <Route path='/terms' element={<Terms />} />
+          <Route path='/privacy' element={<Privacy />} />
           <Route path='*' element={<ErrorPage />} />
         </Routes>
         <Footer />

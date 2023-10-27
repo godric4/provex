@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { prices } from '../utils/constants';
 
 const Pricing = () => {
@@ -21,11 +22,14 @@ const Pricing = () => {
                   <p className='text-[1.1rem] leading-10 '>
                     Duration:{duration}
                   </p>
-                  <button className=' bg-secondary w-full p-4 text-primary'>
-                    <span className='bg-primary text-white py-2 px-6 btn '>
+                  <button className=' bg-secondary w-full p-4  text-primary '>
+                    <Link
+                      to='pricing'
+                      className='bg-primary text-white py-2 px-6 btn '
+                    >
                       {' '}
                       Buy Now
-                    </span>
+                    </Link>
                   </button>
                 </div>
               </div>

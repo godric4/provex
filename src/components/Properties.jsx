@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { landedProperties } from '../utils/constants';
 import PropertyCard from './PropertyCard';
 
@@ -21,7 +22,9 @@ const Properties = () => {
         })}
       </div>
       <div className='text-center mt-5'>
-        <button className='btn w-full bg-primary text-white'>Find More</button>
+        <Link to='/properties' className='btn w-full bg-primary text-white'>
+          Find More
+        </Link>
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import {
   elenore,
   hero,
@@ -30,9 +31,12 @@ const Home = () => {
             simple, accessible and affordable.
           </p>
           <div className='flex justify-center mt-4'>
-            <button className='btn bg-lighter w-[9rem] text-primary font-bold'>
+            <Link
+              to='/pricing'
+              className='btn bg-lighter w-[9rem] text-primary font-bold'
+            >
               Know More
-            </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -49,9 +53,12 @@ const Home = () => {
             dominant Real Estate Establishment , Property Investment and
             Management Company.
           </p>
-          <button className='btn bg-lighter w-[9rem] mt-5 text-primary font-bold'>
+          <Link
+            to='about'
+            className='btn bg-lighter w-[9rem] mt-5 text-primary font-bold'
+          >
             Know More
-          </button>
+          </Link>
         </div>
       </div>
       <div className='mt-5'>
@@ -136,9 +143,12 @@ const Home = () => {
           </div>
         </div>
         <div className='text-center pb-5'>
-          <button className='btn w-[75%] bg-primary text-white px-5 mt-4'>
+          <Link
+            to='/pricing'
+            className='btn w-[75%] bg-primary text-white px-5 mt-4'
+          >
             Get Quote
-          </button>
+          </Link>
         </div>
       </div>
       {/* testimonial */}
@@ -153,27 +163,29 @@ const Home = () => {
             <img src={elenore} alt='user' className='user-img' />
             <h3 className='font-bold text-[1rem]'>Elenore. J</h3>
             <p>
-              "I don't know what else to say. Provex Homes did exactly what they
-              said it does. Property investment has really helped our business.
-              Really good." - Alayne R
+              "I can't thank Provex Homes enough for their professionalism and
+              attention to detail. They helped me find an incredible investment
+              property that exceeded my expectations. I'm looking forward to
+              working with them again.
             </p>
           </div>
           <div className='flex flex-col justify-center items-center '>
             <img src={yvonne} alt='user' className='user-img' />
             <h3 className='font-bold text-[1rem]'>Alayne. R</h3>
             <p>
-              "I don't know what else to say. Provex Homes did exactly what they
-              said it does. Property investment has really helped our business.
-              Really good."
+              "From the first meeting to the closing, Provex Homes exceeded our
+              expectations. They understood exactly what we were looking for and
+              helped us navigate the market with confidence. Highly
+              recommended!"
             </p>
           </div>
           <div className='flex flex-col justify-center items-center '>
             <img src={ricky} alt='user' className='user-img' />
             <h3 className='font-bold text-[1rem]'>Ricky. G</h3>
             <p>
-              "I don't know what else to say. Provex Homes did exactly what they
-              said it does. Property investment has really helped our business.
-              Really good." - Alayne R
+              "The team at Provex Homes made the home-buying process seamless.
+              They were always available to answer our questions and provided
+              invaluable insights. We're grateful for their dedication."
             </p>
           </div>
         </div>

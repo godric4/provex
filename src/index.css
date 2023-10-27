@@ -92,18 +92,17 @@
     padding-left: 15px;
   }
 
-  .contact-form input:focus {
+  .form-control input:focus {
     border-radius: 10px;
   }
 
   .form-label {
-    color: var(--dark);
     font-weight: bold;
   }
 
-  .contact-form input,
+  .form-control input,
   textarea {
-    border: 1px solid var(--dark);
+    border: 1px solid black;
   }
 
   @media screen and (min-width: 768px) {
@@ -127,25 +126,5 @@
     margin-top: -1rem;
     min-height: 100vh;
     padding-top: 5rem;
-  }
-
-  .about-images {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .about-images img {
-    height: 155px;
-    width: 100%;
-    margin: 0 0.1rem;
-  }
-
-  @media only screen and (max-width: 448px) {
-    .about-images img {
-      height: 100px;
-      width: 110px;
-      margin: 0;
-    }
   }
 }
