@@ -53,7 +53,9 @@ const Navbar = () => {
             <p>Sign In </p>
           </NavLink>
         </ul>
-
+        {/* <button className='text-[1.6rem]   hidden max-lg:block'>
+          <FaBars />
+        </button> */}{' '}
         {/* <button className='text-[1.6rem]   hidden max-lg:block'>
           <FaBars />
         </button> */}

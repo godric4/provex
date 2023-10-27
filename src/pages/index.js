@@ -9,6 +9,7 @@ import PropertiesPage from './PropertiesPage';
 import Faq from './Faq';
 import Privacy from './Privacy';
 import Terms from './Terms';
+import Login from './Login';
 
 export {
   Home,
@@ -20,4 +21,7 @@ export {
   PricePlan,
   PropertiesPage,
   Faq,
+  Login,
+  Privacy,
+  Terms,
 };
