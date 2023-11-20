@@ -9,8 +9,16 @@ const Footer = () => {
         {/* <!-- Contact Details --> */}
         <div className='w-full md:w-1/3 mb-4 md:mb-0'>
           <h3 className='text-xl font-bold mb-4'>Contact Details</h3>
+          <h4 className='font-semibold'>Head Office</h4>
           <p>263 NOTTINGHAM ROAD</p>
           <p>NOTTINGHAM, ENGLAND NG7 7DA</p>
+          <div className=''>
+            <br />
+            <h4 className='font-semibold'>Regional Office</h4>
+            <p>2 AV. DE SUFFEREN 75007</p>
+            <p>PARIS, FRANCE</p>
+            <br />
+          </div>
           <p>
             {' '}
             <a
@@ -26,7 +34,7 @@ const Footer = () => {
 
         {/* <!-- Quick Links --> */}
         <div className='w-full md:w-1/3 mb-4 md:mb-0'>
-          <h3 className='text-xl font-bold mb-4'>Quick Links</h3>
+          <h3 className='text-xl font-bold mb-4'>Useful Links</h3>
           <ul>
             <li>
               <Link to='/' className='block mb-2'>

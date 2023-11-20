@@ -15,6 +15,7 @@ import MiniHero from './MiniHero';
 import ContactForm from './ContactForm';
 import SocialIcons from './SocialIcons';
 import Question from './Question';
+import FormRow from './FormRow';
 
 export {
   Navbar,
@@ -32,4 +33,5 @@ export {
   ContactForm,
   SocialIcons,
   Question,
+  FormRow,
 };

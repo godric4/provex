@@ -27,6 +27,7 @@ import detached_duplex from './detached_duplex.jpg';
 import ranch from './ranch.jpg';
 import single1 from './single1.jpg';
 import single2 from './single2.jpg';
+import loginBg from './bgg.jpg';
 
 export {
   ranch,
@@ -58,4 +59,5 @@ export {
   bungalow,
   contemporary,
   detached_duplex,
+  loginBg,
 };

@@ -33,7 +33,7 @@ const Home = () => {
           <div className='flex justify-center mt-4'>
             <Link
               to='/pricing'
-              className='btn bg-lighter w-[9rem] text-primary font-bold'
+              className='btn bg-lighter w-[9rem]  text-primary font-bold'
             >
               Know More
             </Link>
@@ -48,14 +48,14 @@ const Home = () => {
           <h3 className='font-bold text-primary text-[1.5rem]'>
             About Our Properties
           </h3>
-          <p className='text-[1.15rem] '>
+          <p className='text-[1.15rem] mb-4 '>
             There are many variations of properties available,Provex Homes is a
             dominant Real Estate Establishment , Property Investment and
             Management Company.
           </p>
           <Link
-            to='about'
-            className='btn bg-lighter w-[9rem] mt-5 text-primary font-bold'
+            to='/about'
+            className='btn bg-lighter w-[9rem] p-3 text-primary font-bold'
           >
             Know More
           </Link>

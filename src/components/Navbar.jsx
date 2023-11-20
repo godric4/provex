@@ -4,6 +4,10 @@ import { links } from '../utils/constants';
 import { useEffect, useState } from 'react';
 import Sidebar from './Sidebar';
 import { logo } from '../assets';
+import { FaCaretDown, FaUserCircle } from 'react-icons/fa';
+import { useDispatch } from 'react-redux';
+import { logoutUser } from '../features/user/UserSlice';
+import { closeSidebar } from '../features/user/SidebarSlice';
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -13,6 +17,13 @@ const Navbar = () => {
     setIsMobile(!isMobile);
   };
 
+  const [showLogout, setShowLogout] = useState(false);
+  const dispatch = useDispatch();
+
+  const handleLogout = () => {
+    dispatch(logoutUser());
+    dispatch(closeSidebar());
+  };
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -49,6 +60,29 @@ const Navbar = () => {
               </NavLink>
             );
           })}
+          {/*  */}
+          <div className='user-btn'>
+            <div className='user-prop flex'>
+              <button
+                className='flex btn'
+                onClick={() => setShowLogout(!showLogout)}
+              >
+                <FaUserCircle />
+                <FaCaretDown />
+              </button>
+              <div
+                className={showLogout ? 'dropdown show-dropdown' : 'dropdown'}
+              >
+                <button
+                  type='button'
+                  className='dropdown-btn'
+                  onClick={handleLogout}
+                >
+                  logout
+                </button>
+              </div>
+            </div>
+          </div>
           <NavLink to='/register' className='text-accent'>
             <p>Sign In </p>
           </NavLink>
