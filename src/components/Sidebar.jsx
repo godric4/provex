@@ -1,11 +1,21 @@
 import { useEffect, useRef, useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaCaretDown, FaTimes, FaUserCircle } from 'react-icons/fa';
 import { Link, NavLink } from 'react-router-dom';
 import { links } from '../utils/constants';
+import { useDispatch, useSelector } from 'react-redux';
+import { logoutUser } from '../features/user/UserSlice';
 
 const Sidebar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const navbarRef = useRef(null);
+  const { user } = useSelector((store) => store.user);
+  const [showLogout, setShowLogout] = useState(false);
+  const dispatch = useDispatch();
+
+  const handleLogout = () => {
+    dispatch(logoutUser());
+    dispatch(closeSidebar());
+  };
 
   const openSidebar = () => {
     setIsSidebarOpen(true);
@@ -50,22 +60,56 @@ const Sidebar = () => {
               <FaTimes />
             </button>
             {/*  */}
-            <ul className=' bg-primary top-[-2.5rem]  absolute pt-20 h-[100vh] text-left w-[250px]'>
+            <ul className=' bg-primary top-[-2.5rem]  absolute pt-20 h-[100vh] text-left w-[250px] text-[1.2rem]'>
+              {/*  */}
+              {user ? (
+                <div className='user-btn'>
+                  <div className='user-prop flex'>
+                    <button
+                      className='flex btn'
+                      onClick={() => setShowLogout(!showLogout)}
+                    >
+                      <FaUserCircle />
+                      <FaCaretDown />
+                    </button>
+                    <div
+                      className={
+                        showLogout ? 'dropdown show-dropdown' : 'dropdown'
+                      }
+                    >
+                      <button
+                        type='button'
+                        className='dropdown-btn'
+                        onClick={handleLogout}
+                      >
+                        logout
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                ''
+              )}
+              {/*  */}
+              <NavLink
+                to={user ? '/' : '/register'}
+                className='text-accent ml-6'
+                onClick={closeSidebar}
+              >
+                {user ? 'Dashboard' : 'Login'}
+              </NavLink>
+              {/*  */}
               {links.map((link) => {
                 const { label, path } = link;
 
                 return (
-                  <li key={label} className='px-6 pt-5 max-sm:text-[1.2rem]'>
+                  <li key={label} className='px-6 pt-5 pb-2 max-sm:text-[1rem]'>
                     <Link to={path} className='nav-link' onClick={closeSidebar}>
                       {label}
                     </Link>
                   </li>
                 );
               })}
-
-              <Link to='/register' className='text-accent text-[1.2rem]'>
-                <p className='ml-6 mt-3'>Sign In</p>
-              </Link>
             </ul>
           </>
         )}

@@ -10,7 +10,7 @@ import Faq from './Faq';
 import Privacy from './Privacy';
 import Terms from './Terms';
 import Login from './Login';
-import ProtectedRoute from './Protectedoutes';
+import ProtectedRoute from './ProtectedRoute';
 import SharedLayout from './dashboard/SharedLayout';
 import Dashboard from './dashboard/Dashboard';
 

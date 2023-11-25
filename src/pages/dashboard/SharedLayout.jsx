@@ -16,8 +16,4 @@ const SharedLayout = () => {
   );
 };
 
-/* .outlet {
-    flex: 1;
-  } */
-
 export default SharedLayout;

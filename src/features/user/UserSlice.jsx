@@ -1,5 +1,4 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import React from 'react';
 import customFetch from '../../utils/axios';
 import { toast } from 'react-toastify';
 import {
@@ -18,24 +17,6 @@ export const registerUser = createAsyncThunk(
   async (user, thunkAPI) => {
     try {
       const res = await customFetch.post('/auth/local/register', user);
-      const generateAccessCode = (length) => {
-        const date = new Date();
-        const year = date.getFullYear();
-
-        const charset = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-        let userCode = `ELM/${year}/`;
-
-        for (let i = 0; i < length; i++) {
-          const randomIndex = Math.floor(Math.random() * charset.length);
-          userCode += charset[randomIndex];
-        }
-
-        console.log(userCode);
-
-        return userCode;
-      };
-
-      generateAccessCode(4);
       return res.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.response.data.error.message);

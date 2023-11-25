@@ -20,7 +20,7 @@ export const links = [
   },
   {
     label: 'Properties ',
-    path: 'properties',
+    path: '/properties',
   },
   {
     label: 'Pricing ',

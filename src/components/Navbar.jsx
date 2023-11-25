@@ -5,11 +5,12 @@ import { useEffect, useState } from 'react';
 import Sidebar from './Sidebar';
 import { logo } from '../assets';
 import { FaCaretDown, FaUserCircle } from 'react-icons/fa';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { logoutUser } from '../features/user/UserSlice';
 import { closeSidebar } from '../features/user/SidebarSlice';
 
 const Navbar = () => {
+  const { user } = useSelector((store) => store.user);
   const [isMobile, setIsMobile] = useState(false);
   const [scrolling, setScrolling] = useState(false);
 
@@ -47,7 +48,7 @@ const Navbar = () => {
     >
       <nav className='container flex  justify-between items-center w-full mt-[-3.2rem] text-lighter'>
         {/* Logo */}
-        <Link to='/'>
+        <Link to='/home'>
           <img src={logo} alt='logo' className='w-[150px] h-[150px] ' />
         </Link>
         {/* links */}
@@ -61,7 +62,7 @@ const Navbar = () => {
             );
           })}
           {/*  */}
-          <div className='user-btn'>
+          {/* <div className='user-btn'>
             <div className='user-prop flex'>
               <button
                 className='flex btn'
@@ -82,17 +83,39 @@ const Navbar = () => {
                 </button>
               </div>
             </div>
-          </div>
-          <NavLink to='/register' className='text-accent'>
-            <p>Sign In </p>
+          </div> */}
+
+          <NavLink to={user ? '/' : '/register'} className='text-accent'>
+            {user ? 'Dashboard' : 'Login'}
           </NavLink>
+          {user ? (
+            <div className='user-btn'>
+              <div className='user-prop flex'>
+                <button
+                  className='flex btn'
+                  onClick={() => setShowLogout(!showLogout)}
+                >
+                  <FaUserCircle />
+                  <FaCaretDown />
+                </button>
+                <div
+                  className={showLogout ? 'dropdown show-dropdown' : 'dropdown'}
+                >
+                  <button
+                    type='button'
+                    className='dropdown-btn'
+                    onClick={handleLogout}
+                  >
+                    logout
+                  </button>
+                </div>
+              </div>
+            </div>
+          ) : (
+            ''
+          )}
         </ul>
-        {/* <button className='text-[1.6rem]   hidden max-lg:block'>
-          <FaBars />
-        </button> */}{' '}
-        {/* <button className='text-[1.6rem]   hidden max-lg:block'>
-          <FaBars />
-        </button> */}
+
         <div className='text-[1.6rem]   hidden max-lg:block'>
           <Sidebar />
         </div>

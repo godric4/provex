@@ -39,7 +39,7 @@ const App = () => {
             <Route path='profile' element={<Profile />} />
             <Route path='/properties' element={<PropertiesPage />} />
           </Route>
-          <Route path='home' element={<Home />} />
+          <Route path='/home' element={<Home />} />
           <Route path='/register' element={<Register />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
@@ -50,7 +50,7 @@ const App = () => {
           <Route path='/privacy' element={<Privacy />} />
           <Route path='*' element={<ErrorPage />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </main>
   );
