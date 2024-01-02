@@ -40,9 +40,9 @@ export const prices = [
   {
     number: '1',
     type: 'basic',
-    initial: '5000',
+    initial: '1999',
     final: '30000',
-    roi: '0.90% ROI',
+    roi: '1.16% ROI',
     desc: 'ROI EARN IN 48HRS AFFINE SPACE',
     duration: '3 Months',
   },
